@@ -14,7 +14,7 @@ public class Barang {
     public int Harga, Stok;
 
     public Barang() {
-        this.Barang= null;
+        this.Barang = null;
         this.Harga = 0;
         this.Stok = 0;
     }
@@ -58,4 +58,7 @@ public class Barang {
         this.Stok = Stok;
     }
 
+    public int hitungSubtotal() {
+        return Harga * Stok;
+    }
 }
